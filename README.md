@@ -1,5 +1,7 @@
 # motorSpeedControl
-Algorithm to control the speed of DC Motor
+Algorithm to control the speed of DC Motor with Arduino.
+
+This algorithm uses a Dynamic P-controller where the value of Kp constant keeps changing. 
 
 Based on the RPM of the motor(1200 RPM used), the range of +/-4 in the line no. 85 is used.
 
