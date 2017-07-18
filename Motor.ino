@@ -92,9 +92,9 @@ void checkForError()
   }
   if (flag)
   {
-    while (ecount >= 1);
-    ratio = (float)setpoint * (float)currentrpm;
-    correctedpwm = (float)(pwm / ratio);
+    while (ecount <= 1);
+    ratio = (float)setpoint / (float)currentrpm;
+    correctedpwm = (float)(pwm * ratio);
     pwm = correctedpwm;
 
     ecount = 0;
