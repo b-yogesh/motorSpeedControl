@@ -8,7 +8,6 @@ int i=0, error = 0,realspd =0;
 float ratio =0.0;
 boolean flag=0,sflag = 0,lflag = 0,mflag=0;
 
-
 void setup() {
   pinMode(interruptPin, INPUT);
   pinMode(9,OUTPUT);
@@ -16,8 +15,6 @@ void setup() {
   Serial.begin(115200);
   analogWrite(9,255);
 }
-
-
 
 void loop() 
 {
@@ -49,7 +46,6 @@ void serialInput()
   }
 }
 
-
 void currentSpeed()
 {
   while(count<=2);      
@@ -59,7 +55,6 @@ void currentSpeed()
   Serial.println(currentrpm);
   count =0 ;
 }
-
 
 void checkForError()
 {    
